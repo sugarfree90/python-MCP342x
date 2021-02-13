@@ -60,11 +60,11 @@ class MCP342x(object):
 
     @staticmethod
     def config_to_gain(config):
-        return [g for g, c in MCP342x._gain_to_config.iteritems() if c == config & MCP342x._gain_mask][0]
+        return [g for g, c in MCP342x._gain_to_config.items() if c == config & MCP342x._gain_mask][0]
 
     @staticmethod
     def config_to_resolution(config):
-        return [g for g, c in MCP342x._resolution_to_config.iteritems() if c == config & MCP342x._resolution_mask][0]
+        return [g for g, c in MCP342x._resolution_to_config.items() if c == config & MCP342x._resolution_mask][0]
 
     @staticmethod
     def config_to_lsb(config):
